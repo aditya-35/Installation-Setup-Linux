@@ -147,32 +147,36 @@ chmod 755 /home/kiosk
 
 ### FTP Client Configuration
 #### Install FTP Client
+```bash
 dnf install ftp -y
+```
 
 #### Connect as Authenticated User
+```bash
 ftp <SERVER_IP>
-
+```
 
 #### Example session:
-
+```bash
 Connected to 192.168.206.100
 Name: kiosk
 Password:
 230 Login successful
-
+```
 
 #### Check directory:
-
+```bash
 pwd
-
+```
 
 #### Output:
-
+```bash
 "/home/kiosk"
-
+```
 #### Connect as Anonymous User
+```bash
 ftp <SERVER_IP>
-
+```
 
 #### Login:
 
@@ -183,4 +187,22 @@ Password: (press Enter)
 #### Expected directory:
 
 "/"
+
+## Verification & Testing
+#### Test File Listing
+```bash
+ls
+```
+
+#### Download a File
+```bash
+get file1.txt
+```
+
+#### Exit FTP Session
+```bash
+bye
+```
+
+
 
