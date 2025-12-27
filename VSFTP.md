@@ -179,15 +179,15 @@ ftp <SERVER_IP>
 ```
 
 #### Login:
-
+```bash
 Name: ftp
 Password: (press Enter)
-
+```
 
 #### Expected directory:
-
+```bash
 "/"
-
+```
 ## Verification & Testing
 #### Test File Listing
 ```bash
